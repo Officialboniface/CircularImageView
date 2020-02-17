@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/FirstLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Image"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/face"
+            app:civ_border_color="@android:color/holo_red_light"
+            app:civ_border_width="2.5dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="25sp"
+            android:gravity="right"
+            android:text="@string/boniface_akpan"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/AndroidDev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40sp"
+            android:gravity="right"
+            android:text="@string/android_developer"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/SecondLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintTop_toBottomOf="@id/FirstLinear">
+
+
+        <TextView
+            android:id="@+id/Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/holo_red_light"
+
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:text="12\n Task Remaining"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:text="32\n Completed Task"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="330dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/SecondLinear">
+
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="18sp"
+            android:fontFamily="casual"
+            android:includeFontPadding="false"
+            android:text="@string/today"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="25sp"
+            android:drawableStart="@drawable/pink"
+
+            android:drawableEnd="@drawable/arrow_down"
+            android:drawablePadding="10dp"
+            android:text="@string/finish_landing_page_concept"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25sp"
+            android:drawableStart="@drawable/green"
+            android:drawableEnd="@drawable/arrow_down"
+            android:drawablePadding="10dp"
+            android:text="@string/design_app_illustrations"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25sp"
+            android:drawableStart="@drawable/blue"
+            android:drawableEnd="@drawable/arrow_down"
+            android:drawablePadding="10dp"
+            android:text="@string/javascript_training"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25sp"
+            android:drawableStart="@drawable/orange"
+            android:drawableEnd="@drawable/arrow_down"
+            android:drawablePadding="10dp"
+            android:text="@string/surprise_party_for_boniface"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
